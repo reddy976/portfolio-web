@@ -582,28 +582,30 @@ body::after{
   position:relative;
   display:inline-block;
   overflow:hidden;
-  height:1.2em;
 }
 
 .slide-text span{
   display:block;
+  transition:0.3s ease;
 }
 
-/* hover layer */
+/* red text */
 .slide-text .hover-text{
   position:absolute;
-  top:100%;
+  top:0;
   left:0;
+  transform:translateY(100%);
   color:#ff3b3b;
 }
 
-/* animation */
+/* hover animation */
 .slide-text:hover .default-text{
   transform:translateY(-100%);
 }
 
 .slide-text:hover .hover-text{
-  transform:translateY(-100%);
+  transform:translateY(0);
+}
 }
   .hero-name h1{
   opacity:1 !important;
