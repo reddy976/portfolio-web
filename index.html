@@ -578,6 +578,35 @@ body::after{
 .l2{
   opacity:0.4;
 }
+  /* HERO SLIDE EFFECT (LIKE CONTACT) */
+.slide-text{
+  position:relative;
+  display:inline-block;
+  overflow:hidden;
+}
+
+.slide-text .default-text,
+.slide-text .hover-text{
+  display:block;
+  transition:0.4s ease;
+}
+
+/* hover layer */
+.slide-text .hover-text{
+  position:absolute;
+  top:100%;
+  left:0;
+  color:#ff3b3b;
+}
+
+/* animation */
+.slide-text:hover .default-text{
+  transform:translateY(-100%);
+}
+
+.slide-text:hover .hover-text{
+  transform:translateY(-100%);
+}
 </style>
 </head>
 
@@ -617,10 +646,21 @@ body::after{
   <img src="hero.png" class="hero-img">
 
   <div class="hero-name">
-    <h1>Hari Reddy</h1>
-    <div class="sub">Video Editor & VFX Artist</div>
-    <div class="sub">Who refuse to settle</div>
-  </div>
+  <h1 class="slide-text">
+    <span class="default-text">Hari Reddy</span>
+    <span class="hover-text">Hari Reddy</span>
+  </h1>
+
+  <p class="slide-text">
+    <span class="default-text">Video Editor & VFX Artist</span>
+    <span class="hover-text">Video Editor & VFX Artist</span>
+  </p>
+
+  <p class="slide-text">
+    <span class="default-text">Who refuses to settle</span>
+    <span class="hover-text">Who refuses to settle</span>
+  </p>
+</div>
 </section>
 
 <!-- SECOND -->
