@@ -582,12 +582,11 @@ body::after{
   position:relative;
   display:inline-block;
   overflow:hidden;
+  height:1.2em;
 }
 
-.slide-text .default-text,
-.slide-text .hover-text{
+.slide-text span{
   display:block;
-  transition:0.4s ease;
 }
 
 /* hover layer */
@@ -614,6 +613,13 @@ body::after{
 .hero-name p{
   opacity:1 !important;
   color:#aaa;
+}
+  .hero-sub{
+  margin-top:10px;
+}
+
+.hero-sub p{
+  margin:4px 0;
 }
 </style>
 </head>
@@ -654,20 +660,27 @@ body::after{
   <img src="hero.png" class="hero-img">
 
   <div class="hero-name">
+  <div class="hero-name">
+
   <h1 class="slide-text">
     <span class="default-text">Hari Reddy</span>
     <span class="hover-text">Hari Reddy</span>
   </h1>
 
-  <p class="slide-text">
-    <span class="default-text">Video Editor & VFX Artist</span>
-    <span class="hover-text">Video Editor & VFX Artist</span>
-  </p>
+  <div class="hero-sub">
 
-  <p class="slide-text">
-    <span class="default-text">Who refuses to settle</span>
-    <span class="hover-text">Who refuses to settle</span>
-  </p>
+    <p class="slide-text">
+      <span class="default-text">Video Editor & VFX Artist</span>
+      <span class="hover-text">Video Editor & VFX Artist</span>
+    </p>
+
+    <p class="slide-text">
+      <span class="default-text">Who refuses to settle</span>
+      <span class="hover-text">Who refuses to settle</span>
+    </p>
+
+  </div>
+
 </div>
 </section>
 
